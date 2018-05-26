@@ -5,9 +5,9 @@
 :root {
   --honey: #f9c901;
   --lt-brown: #332800;
-  --dk-brown: #191400;
+  --dk-char: #151515;
   --lt-tan: #fffae6;
-  --dk-tan: #fff2bf;
+  --dk-tan: #E8EC99;
 }
 
 *, *::before, *::after {
@@ -33,4 +33,23 @@ nav {
   position: absolute;
   text-align: left;
   top: 100%;
+  left: 0;
+}
+
+nav ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  margin-bottom: 1em;
+  margin-left: 1em;
+}
+
+nav a {
+  color: var(--dk-char);
+  text-decoration: none;
+  font-size: 1em;
+  text-transform: uppercase;
 }
