@@ -1,0 +1,36 @@
+/* CSS Styles */
+
+/* CSS Root Variables */
+
+:root {
+  --honey: #f9c901;
+  --lt-brown: #332800;
+  --dk-brown: #191400;
+  --lt-tan: #fffae6;
+  --dk-tan: #fff2bf;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Navigation Styles Start Here */
+
+header {
+  background-color: var(--lt-tan);
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+
+/* Logo - Margin sets space around
+.logo{
+}
+*/
+
+nav {
+  position: absolute;
+  text-align: left;
+  top: 100%;
+}
