@@ -33,17 +33,41 @@ header {
   display: none;
 }
 
-.nav-toggle-label{
+.nav-toggle-label {
   position: absolute;
   top: 0;
   left: 0;
   margin-left: 1em;
   border: 1px solid var(--honey);
-
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 
+.nav-toggle-label span, .nav-toggle-label span::before, .nav-toggle-label span::after {
+  display: block;
+  background: var(--dk-char);
+  height: 2px;
+  width: 2em;
+  border-radius: 2px;
+  position: relative;
+}
+
+.nav-toggle-label span::before, .nav-toggle-label span::after {
+  content: '';
+  position: absolute;
+}
+
+.nav-toggle-label span::before {
+  bottom: 7px;
+}
+
+.nav-toggle-label span::after {
+  top: 7px;
+}
 
 nav {
+  padding-top: 1em;
   position: absolute;
   text-align: left;
   top: 100%;
@@ -53,7 +77,7 @@ nav {
   display: none;
 }
 
-nav ul{
+nav ul {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -71,10 +95,10 @@ nav a {
   text-transform: uppercase;
 }
 
-nav a:hover{
+nav a:hover {
   color: var(--honey);
 }
 
-.nav-toggle:checked ~ nav {
+.nav-toggle:checked~nav {
   display: block;
 }
