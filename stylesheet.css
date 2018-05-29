@@ -24,10 +24,10 @@ header {
   z-index: 999;
 }
 
-/* Logo - Margin sets space around
+
 .logo{
+padding-left:2.5em;
 }
-*/
 
 .nav-toggle {
   display: none;
@@ -104,10 +104,50 @@ nav a:hover {
 }
 
 .nav-toggle:checked~nav {
-transform: scale(1,1);
+  transform: scale(1, 1);
 }
 
-.nav-toggle:checked ~ nav a {
+.nav-toggle:checked~nav a {
   opacity: 1;
-    transition: opacity 250ms ease-in-out 250ms;
+  transition: opacity 250ms ease-in-out 250ms;
 }
+
+/* Start of Header Media Querys */
+
+@media screen and (min-width:800px) {
+  .nav-toggle-label {
+    display: none;
+  }
+
+  header {
+    display: grid;
+    grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
+  }
+
+  .logo {
+    grid-column: 2 / 3;
+  }
+
+  nav{
+    all: unset;
+    grid-column: 3 / 4;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  nav ul{
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  nav li{
+    margin-left: 2em;
+    margin-bottom: 0;
+  }
+
+  nav a {
+    opacity: 1;
+  }
+}
+/*End of Header Media Querys  */
