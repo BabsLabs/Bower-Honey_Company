@@ -65,6 +65,10 @@ header {
   top: 7px;
 }
 
+.tagline {
+  display: none;
+}
+
 nav {
   padding-top: 1em;
   position: absolute;
@@ -124,6 +128,13 @@ nav a:hover {
   .logo {
     grid-column: 2 / 3;
   }
+
+  .tagline {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
   nav {
     all: unset;
     grid-column: 3 / 4;
