@@ -1,5 +1,9 @@
 /* CSS Styles */
 
+html {
+  font-family: Georgia, serif;
+}
+
 /* CSS Root Variables */
 
 :root {
@@ -96,6 +100,7 @@ nav li {
 nav a {
   color: var(--dk-char);
   text-decoration: none;
+  font-weight: bold;
   font-size: 1em;
   text-transform: uppercase;
   opacity: 0;
@@ -115,9 +120,97 @@ nav a:hover {
   transition: opacity 250ms ease-in-out 250ms;
 }
 
-/* Start of Media Querys */
+/* Body Styles Start Here */
+
+body {
+  background-image: url(./Images/seamless-pattern-honeycomb.png);
+  background-repeat: repeat;
+  /* Add Optional Margin Here????? */
+}
+
+.btn {
+  background: var(--lt-brown);
+  color: var(--lt-tan);
+  padding: .6rem 1.3rem;
+  text-decoration: none;
+  border: 1px solid var(--lt-tan);
+}
+
+img {
+  max-width: 100%;
+}
+
+.body-container {
+  padding-top: 8rem;
+  display: grid;
+  grid-gap: 20px;
+  /* Add Optional Margin or Padding Here????? */
+}
+
+/* Top Container */
+
+.top-container {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas: 'showcase' 'top-box-a' 'top-box-b';
+}
+
+/* Showcase */
+
+.showcase {
+  grid-area: showcase;
+  min-height: 400px;
+  background: url(./Images/honey-color.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+
+.showcase h1 {
+  font-size: 4rem;
+  margin-bottom: 0;
+  color: var(--lt-tan);
+}
+
+.showcase p {
+  font-size: 1.3rem;
+  margin-top: 0;
+  color: var(--lt-tan);
+}
+
+/* Top Box */
+
+.top-box {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.top-box .price {
+  font-size: 1.5rem;
+  font-style: italic;
+
+}
+
+.top-box-a {
+  background-color: var(--dk-tan);
+  grid-area: top-box-a;
+}
+
+.top-box-b {
+  background-color: var(--lt-tan);
+  grid-area: top-box-b;
+}
+
+/* Start of Desktop Media Querys */
 
 @media screen and (min-width:925px) {
+  /* Header and Nav Media Query CSS */
   .nav-toggle-label {
     display: none;
   }
@@ -174,6 +267,11 @@ nav a:hover {
   nav a:hover::before {
     transform: scale(1, 1);
   }
+  /* Body-Container CSS */
+  .top-container {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas: 'showcase showcase top-box-a' 'showcase showcase top-box-b';
+  }
+  /*End of Media Querys  */
 }
-
-/*End of Media Querys  */
