@@ -190,7 +190,7 @@ img {
 }
 
 .showcase h1 {
-  font-size: 4rem;
+  font-size: 2.5rem;
   margin-bottom: 0;
   color: var(--lt-tan);
 }
@@ -395,6 +395,13 @@ footer {
     grid-gap: 20px;
     grid-template-areas: 'showcase showcase top-box-a' 'showcase showcase top-box-b';
   }
+
+  .showcase h1 {
+    font-size: 4rem;
+    margin-bottom: 0;
+    color: var(--lt-tan);
+  }
+
   .boxes {
     display: grid;
     grid-gap: 20px;
