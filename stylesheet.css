@@ -143,7 +143,6 @@ img {
 .body-container {
   padding-top: 8rem;
   display: grid;
-  grid-gap: 20px;
   /* Add Optional Margin or Padding Here????? */
 }
 
@@ -151,7 +150,6 @@ img {
 
 .top-container {
   display: grid;
-  grid-gap: 20px;
   grid-template-areas: 'showcase' 'top-box-a' 'top-box-b';
 }
 
@@ -194,7 +192,6 @@ img {
 .top-box .price {
   font-size: 1.5rem;
   font-style: italic;
-
 }
 
 .top-box-a {
@@ -206,6 +203,51 @@ img {
   background-color: var(--lt-tan);
   grid-area: top-box-b;
 }
+
+/* Boxes */
+
+.boxes {
+  display: grid;
+  text-align: center;
+}
+
+.divider-dk {
+  background: var(--dk-tan);
+  color: var(--lt-brown);
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.divider-lt {
+  background: var(--lt-tan);
+  color: var(--lt-brown);
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.box-a {
+  background: var(--lt-tan);
+}
+
+.box-b {
+  background: var(--dk-tan);
+}
+
+footer {
+  text-align: center;
+}
+
+/* Start of Tablet Media Querys */
+
+/*@media screen and (min-width:400px){
+}
+
 
 /* Start of Desktop Media Querys */
 
@@ -268,10 +310,18 @@ img {
     transform: scale(1, 1);
   }
   /* Body-Container CSS */
+  .body-container {
+    grid-gap: 20px;
+  }
   .top-container {
     display: grid;
     grid-gap: 20px;
     grid-template-areas: 'showcase showcase top-box-a' 'showcase showcase top-box-b';
+  }
+  .boxes {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas: '';
   }
   /*End of Media Querys  */
 }
