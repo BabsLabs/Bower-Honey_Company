@@ -342,6 +342,15 @@ footer {
     grid-gap: 20px;
     grid-template-areas: 'divider-dk divider-dk' 'inside-the-hive box-a' 'box-b beekeeper' 'pancakes box-c' 'divider-dk2 divider-dk2';
   }
+
+  .Portfolio {
+    display: flex;
+    overflow: scroll;
+  }
+  .Portfolio img {
+    width: 100%;
+    padding: 20px;
+  }
 }
 
 /* Start of Desktop Media Querys */
