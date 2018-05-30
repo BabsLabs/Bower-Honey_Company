@@ -127,6 +127,7 @@ nav a:hover {
 body {
   background-image: url(./Images/seamless-pattern-honeycomb.png);
   background-repeat: repeat;
+  background-attachment: fixed;
   /* Add Optional Margin Here????? */
 }
 
@@ -322,13 +323,30 @@ footer {
 
 /* Start of Tablet Media Querys */
 
-/*@media screen and (min-width:400px){
+@media screen and (min-width:600px) {
+  .body-container {
+    grid-gap: 20px;
+  }
+  .top-container {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas: 'showcase showcase top-box-a' 'showcase showcase top-box-b';
+  }
+  .showcase h1 {
+    font-size: 4rem;
+    margin-bottom: 0;
+    color: var(--lt-tan);
+  }
+  .boxes {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas: 'divider-dk divider-dk' 'inside-the-hive box-a' 'box-b beekeeper' 'pancakes box-c' 'divider-dk2 divider-dk2';
+  }
 }
-
 
 /* Start of Desktop Media Querys */
 
-@media screen and (min-width:925px) {
+@media screen and (min-width:975px) {
   /* Header and Nav Media Query CSS */
   .nav-toggle-label {
     display: none;
@@ -395,13 +413,11 @@ footer {
     grid-gap: 20px;
     grid-template-areas: 'showcase showcase top-box-a' 'showcase showcase top-box-b';
   }
-
   .showcase h1 {
     font-size: 4rem;
     margin-bottom: 0;
     color: var(--lt-tan);
   }
-
   .boxes {
     display: grid;
     grid-gap: 20px;
