@@ -71,9 +71,11 @@ header {
 
 .tagline {
   display: none;
+  color: var(--lt-brown);
 }
 
 nav {
+  color: var(--lt-brown);
   padding-top: 1em;
   position: absolute;
   text-align: left;
@@ -215,8 +217,7 @@ img {
 .boxes {
   color: var(--lt-brown);
   display: grid;
-  grid-template-areas: 'divider-dk' 'inside-the-hive' 'box-a' 'beekeeper' 'box-b' 'pancakes' 'box-c' 'divider-dk';
-
+  grid-template-areas: 'divider-dk' 'inside-the-hive' 'box-a' 'beekeeper' 'box-b' 'pancakes' 'box-c' 'divider-dk2';
 }
 
 .divider-dk {
@@ -270,17 +271,32 @@ img {
   background: var(--lt-tan);
 }
 
-.inside-the-hive{
+.inside-the-hive {
   grid-area: inside-the-hive;
 }
 
-.beekeeper{
+.beekeeper {
   grid-area: beekeeper;
 }
 
-.pancakes{
+.pancakes {
   grid-area: pancakes;
 }
+
+/* Portfolio */
+
+/* Info */
+
+.info {
+  background-color: var(--lt-tan);
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+/* Footer */
 
 footer {
   text-align: center;
