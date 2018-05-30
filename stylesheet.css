@@ -387,10 +387,13 @@ footer {
   }
   /* Portfolio */
   .Portfolio{
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: repeat(9, 1fr);
+    display: flex;
+    overflow: scroll;
+  }
 
+  .Portfolio img {
+    width: 100%;
+padding: 20px;
   }
   /*End of Media Querys  */
 }
