@@ -8,7 +8,7 @@ html {
 
 :root {
   --honey: #f9c901;
-  --lt-brown: #332800;
+  --lt-brown: #312800;
   --dk-char: #151515;
   --lt-tan: #fffae6;
   --dk-tan: #E8EC99;
@@ -79,7 +79,6 @@ nav {
   text-align: left;
   top: 100%;
   left: 0;
-  background: var(--lt-tan);
   width: 100%;
   transform: scale(1, 0);
   transform-origin: top;
@@ -134,6 +133,13 @@ body {
   padding: .6rem 1.3rem;
   text-decoration: none;
   border: 1px solid var(--lt-tan);
+}
+
+.btn-b {
+  color: var(--lt-brown);
+  padding: .6rem 1.3rem;
+  text-decoration: none;
+  border: 1px solid var(--lt-brown);
 }
 
 img {
@@ -207,13 +213,15 @@ img {
 /* Boxes */
 
 .boxes {
+  color: var(--lt-brown);
   display: grid;
-  text-align: center;
+  grid-template-areas: 'divider-dk' 'inside-the-hive' 'box-a' 'beekeeper' 'box-b' 'pancakes' 'box-c' 'divider-dk';
+
 }
 
 .divider-dk {
+  grid-area: divider-dk;
   background: var(--dk-tan);
-  color: var(--lt-brown);
   display: grid;
   align-items: center;
   justify-content: center;
@@ -221,9 +229,10 @@ img {
   text-align: center;
 }
 
-.divider-lt {
-  background: var(--lt-tan);
-  color: var(--lt-brown);
+.divider-dk2 {
+  grid-area: divider-dk2;
+  background: var(--lt-brown);
+  color: var(--lt-tan);
   display: grid;
   align-items: center;
   justify-content: center;
@@ -232,11 +241,45 @@ img {
 }
 
 .box-a {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  text-align: center;
+  grid-area: box-a;
   background: var(--lt-tan);
 }
 
 .box-b {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  text-align: center;
+  grid-area: box-b;
   background: var(--dk-tan);
+}
+
+.box-c {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  text-align: center;
+  grid-area: box-c;
+  background: var(--lt-tan);
+}
+
+.inside-the-hive{
+  grid-area: inside-the-hive;
+}
+
+.beekeeper{
+  grid-area: beekeeper;
+}
+
+.pancakes{
+  grid-area: pancakes;
 }
 
 footer {
@@ -321,7 +364,7 @@ footer {
   .boxes {
     display: grid;
     grid-gap: 20px;
-    grid-template-areas: '';
+    grid-template-areas: 'divider-dk divider-dk' 'inside-the-hive box-a' 'box-b beekeeper' 'pancakes box-c' 'divider-dk2 divider-dk2';
   }
   /*End of Media Querys  */
 }
