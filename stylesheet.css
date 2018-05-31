@@ -1,7 +1,8 @@
 /* CSS Styles */
 
 html {
-  font-family: Georgia, serif;
+  font-family: 'Crete Round', serif;
+font-family: 'ABeeZee', sans-serif;
 }
 
 /* CSS Root Variables */
@@ -137,6 +138,7 @@ body {
   padding: .6rem 1.3rem;
   text-decoration: none;
   border: 1px solid var(--lt-tan);
+  text-align: center;
 }
 
 .btn:hover {
@@ -186,12 +188,13 @@ img {
   padding: 3rem;
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: center;
   justify-content: center;
 }
 
 .showcase h1 {
   font-size: 2.5rem;
+  padding-bottom: 1rem;
   margin-bottom: 0;
   color: var(--lt-tan);
 }
@@ -212,17 +215,21 @@ img {
 }
 
 .top-box .price {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-style: italic;
 }
 
 .top-box-a {
-  background-color: var(--dk-tan);
+  background-image: url(./Images/balm4-2.jpg);
+  background-size: cover;
+  background-position: center;
   grid-area: top-box-a;
 }
 
 .top-box-b {
-  background-color: var(--lt-brown);
+  background-image: url(./Images/Beevac.jpg);
+  background-size: cover;
+  background-position: bottom;
   color: var(--lt-tan);
   grid-area: top-box-b;
 }
