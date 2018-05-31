@@ -342,6 +342,15 @@ footer {
     grid-gap: 20px;
     grid-template-areas: 'divider-dk divider-dk' 'inside-the-hive box-a' 'box-b beekeeper' 'pancakes box-c' 'divider-dk2 divider-dk2';
   }
+  .inside-the-hive {
+    grid-area: inside-the-hive;
+  }
+  .beekeeper {
+    grid-area: beekeeper;
+  }
+  .pancakes {
+    grid-area: pancakes;
+  }
   .Portfolio {
     display: flex;
     overflow: scroll;
