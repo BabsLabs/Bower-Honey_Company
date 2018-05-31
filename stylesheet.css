@@ -286,16 +286,29 @@ img {
   background: var(--lt-tan);
 }
 
+.imgbox{
+  padding: 5rem;
+}
+
 .inside-the-hive {
   grid-area: inside-the-hive;
+  background-image: url(./Images/inside-the-bee-hive.jpg);
+  background-position: bottom;
+  background-size: cover;
 }
 
 .beekeeper {
   grid-area: beekeeper;
+  background-image: url(./Images/beekeeper.jpg);
+  background-position: center;
+  background-size: cover;
 }
 
 .pancakes {
   grid-area: pancakes;
+  background-image: url(./Images/Honey_being_drizzled_onto_buttered_pancakes.jpg);
+  background-position: left;
+  background-size: cover;
 }
 
 /* Portfolio */
