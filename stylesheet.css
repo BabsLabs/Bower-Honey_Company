@@ -1,10 +1,14 @@
 /* CSS Styles */
 
+html {
+  font-family: Georgia, serif;
+}
+
 /* CSS Root Variables */
 
 :root {
   --honey: #f9c901;
-  --lt-brown: #332800;
+  --lt-brown: #312800;
   --dk-char: #151515;
   --lt-tan: #fffae6;
   --dk-tan: #E8EC99;
@@ -67,15 +71,17 @@ header {
 
 .tagline {
   display: none;
+  color: var(--lt-brown);
 }
 
 nav {
+  color: var(--lt-brown);
+  background: var(--lt-tan);
   padding-top: 1em;
   position: absolute;
   text-align: left;
   top: 100%;
   left: 0;
-  background: var(--lt-tan);
   width: 100%;
   transform: scale(1, 0);
   transform-origin: top;
@@ -96,6 +102,7 @@ nav li {
 nav a {
   color: var(--dk-char);
   text-decoration: none;
+  font-weight: bold;
   font-size: 1em;
   text-transform: uppercase;
   opacity: 0;
@@ -115,9 +122,263 @@ nav a:hover {
   transition: opacity 250ms ease-in-out 250ms;
 }
 
-/* Start of Media Querys */
+/* Body Styles Start Here */
 
-@media screen and (min-width:925px) {
+body {
+  background-image: url(./Images/seamless-pattern-honeycomb.png);
+  background-repeat: repeat;
+  background-attachment: fixed;
+  /* Add Optional Margin Here????? */
+}
+
+.btn {
+  background: var(--lt-brown);
+  color: var(--lt-tan);
+  padding: .6rem 1.3rem;
+  text-decoration: none;
+  border: 1px solid var(--lt-tan);
+}
+
+.btn:hover {
+  background: var(--lt-tan);
+  color: var(--lt-brown);
+  border: 1px solid var(--lt-brown);
+}
+
+.btn-b {
+  color: var(--lt-brown);
+  padding: .6rem 1.3rem;
+  text-decoration: none;
+  border: 1px solid var(--lt-brown);
+}
+
+.btn-b:hover {
+  background: var(--lt-brown);
+  color: var(--lt-tan);
+  border: 1px solid var(--lt-tan);
+}
+
+img {
+  max-width: 100%;
+}
+
+.body-container {
+  padding-top: 8rem;
+  display: grid;
+  /* Add Optional Margin or Padding Here????? */
+}
+
+/* Top Container */
+
+.top-container {
+  display: grid;
+  grid-template-areas: 'showcase' 'top-box-a' 'top-box-b';
+}
+
+/* Showcase */
+
+.showcase {
+  grid-area: showcase;
+  min-height: 400px;
+  background: url(./Images/honey-color.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+
+.showcase h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0;
+  color: var(--lt-tan);
+}
+
+.showcase p {
+  font-size: 1.3rem;
+  margin-top: 0;
+  color: var(--lt-tan);
+}
+
+/* Top Box */
+
+.top-box {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.top-box .price {
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+.top-box-a {
+  background-color: var(--dk-tan);
+  grid-area: top-box-a;
+}
+
+.top-box-b {
+  background-color: var(--lt-brown);
+  color: var(--lt-tan);
+  grid-area: top-box-b;
+}
+
+/* Boxes */
+
+.boxes {
+  color: var(--lt-brown);
+  display: grid;
+  grid-template-areas: 'divider-dk' 'inside-the-hive' 'box-a' 'beekeeper' 'box-b' 'pancakes' 'box-c' 'divider-dk2';
+}
+
+.divider-dk {
+  grid-area: divider-dk;
+  background: var(--dk-tan);
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.divider-dk2 {
+  grid-area: divider-dk2;
+  background: var(--lt-brown);
+  color: var(--lt-tan);
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.box-a {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  text-align: center;
+  grid-area: box-a;
+  background: var(--lt-tan);
+}
+
+.box-b {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  text-align: center;
+  grid-area: box-b;
+  background: var(--dk-tan);
+}
+
+.box-c {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  text-align: center;
+  grid-area: box-c;
+  background: var(--lt-tan);
+}
+
+.imgbox{
+  padding: 5rem;
+}
+
+.inside-the-hive {
+  grid-area: inside-the-hive;
+  background-image: url(./Images/inside-the-bee-hive.jpg);
+  background-position: bottom;
+  background-size: cover;
+}
+
+.beekeeper {
+  grid-area: beekeeper;
+  background-image: url(./Images/beekeeper.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.pancakes {
+  grid-area: pancakes;
+  background-image: url(./Images/Honey_being_drizzled_onto_buttered_pancakes.jpg);
+  background-position: left;
+  background-size: cover;
+}
+
+/* Portfolio */
+
+.Portfolio {
+  display: none;
+}
+
+/* Info */
+
+.info {
+  background-color: var(--lt-tan);
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+/* Footer */
+
+footer {
+  text-align: center;
+}
+
+/* Start of Tablet Media Querys */
+
+@media screen and (min-width:600px) {
+  .body-container {
+    grid-gap: 20px;
+  }
+  .top-container {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas: 'showcase showcase top-box-a' 'showcase showcase top-box-b';
+  }
+  .showcase h1 {
+    font-size: 4rem;
+    margin-bottom: 0;
+    color: var(--lt-tan);
+  }
+  .boxes {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas: 'divider-dk divider-dk' 'inside-the-hive box-a' 'box-b beekeeper' 'pancakes box-c' 'divider-dk2 divider-dk2';
+  }
+  .inside-the-hive {
+    grid-area: inside-the-hive;
+  }
+  .beekeeper {
+    grid-area: beekeeper;
+  }
+  .pancakes {
+    grid-area: pancakes;
+  }
+  .Portfolio {
+    display: flex;
+    overflow: scroll;
+  }
+  .Portfolio img {
+    width: 100%;
+    padding: 20px;
+    flex: 375px 250px;
+  }
+}
+
+/* Start of Desktop Media Querys */
+
+@media screen and (min-width:975px) {
+  /* Header and Nav Media Query CSS */
   .nav-toggle-label {
     display: none;
   }
@@ -174,6 +435,33 @@ nav a:hover {
   nav a:hover::before {
     transform: scale(1, 1);
   }
+  /* Body-Container CSS */
+  .body-container {
+    grid-gap: 20px;
+  }
+  .top-container {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas: 'showcase showcase top-box-a' 'showcase showcase top-box-b';
+  }
+  .showcase h1 {
+    font-size: 4rem;
+    margin-bottom: 0;
+    color: var(--lt-tan);
+  }
+  .boxes {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas: 'divider-dk divider-dk' 'inside-the-hive box-a' 'box-b beekeeper' 'pancakes box-c' 'divider-dk2 divider-dk2';
+  }
+  /* Portfolio */
+  .Portfolio {
+    display: flex;
+    overflow: scroll;
+  }
+  .Portfolio img {
+    width: 100%;
+    padding: 20px;
+  }
+  /*End of Media Querys  */
 }
-
-/*End of Media Querys  */
