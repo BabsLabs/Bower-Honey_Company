@@ -1,0 +1,50 @@
+@import "stylesheet.css";
+
+body{
+  color: var(--lt-brown);
+}
+
+.shop-showcase{
+    padding-top: 8rem;
+    display: grid;
+}
+
+.products-divider {
+  background-color: var(--dk-tan);
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.honey-container {
+  background-color: var(--lt-brown);
+  display: grid;
+  align-content: center;
+  justify-content: center;
+}
+
+.honey-divider{
+  background-color: var(--lt-tan);
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.honey-jars{
+  background-image: url(./Images/honey-318175_1920.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 3rem;
+}
+
+.honey-bears{
+  background-image: url(./Images/Honey_Bear.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 3rem;
+}
