@@ -8,6 +8,7 @@ body {
 }
 
 .products-divider {
+  font-weight:bold;
   background-color: var(--dk-tan);
   display: flex;
   align-content: center;
@@ -22,6 +23,7 @@ body {
   align-content: center;
   justify-content: center;
 }
+
 
 .honey-divider {
   background-color: var(--lt-tan);
@@ -125,5 +127,5 @@ body {
   display: flex;
   justify-content: center;
   align-content: center;
-  padding: 3rem;;
+  padding: 3rem;
 }
