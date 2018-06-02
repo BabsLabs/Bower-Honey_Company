@@ -1,12 +1,10 @@
 @import "stylesheet.css";
-
-body{
+body {
   color: var(--lt-brown);
 }
 
-.shop-showcase{
-    padding-top: 8rem;
-    display: grid;
+.shop-showcase {
+  padding-top: 8rem;
 }
 
 .products-divider {
@@ -15,36 +13,117 @@ body{
   align-content: center;
   justify-content: center;
   width: 100%;
+  grid-area: products;
 }
 
 .honey-container {
   background-color: var(--lt-brown);
-  display: grid;
+  width: 100%;
   align-content: center;
   justify-content: center;
 }
 
-.honey-divider{
+.honey-divider {
+  background-color: var(--lt-tan);
+  width: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.honey-jars {
+  background-image: url(./Images/honey-318175_1920.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 3rem;
+}
+
+.honey-bears {
+  background-image: url(./Images/Honey_Bear.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 3rem;
+}
+
+.honey-comb {
+  background-image: url(./Images/honeycomb.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 3rem;
+}
+
+.balms-container {
+  background-color: var(--lt-brown);
+  align-content: center;
+  justify-content: center;
+}
+
+.balms-divider {
+  background-color: var(--lt-tan);
+  width: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.beard-balm {
+  background-image: url(./Images/balm4-2.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 3rem;
+}
+
+.lip-balm {
+  background-image: url(./Images/lip-balm.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 3rem;
+}
+
+.apparel-container {
+  background-color: var(--lt-brown);
+  align-content: center;
+  justify-content: center;
+}
+
+.apparel-divider {
   background-color: var(--lt-tan);
   display: flex;
   align-content: center;
   justify-content: center;
 }
 
-.honey-jars{
-  background-image: url(./Images/honey-318175_1920.jpg);
+.shirts {
+  background-image: url(./images/tshirts.jpg);
   background-size: cover;
+  background-position: center;
   display: flex;
   justify-content: center;
   align-content: center;
   padding: 3rem;
 }
 
-.honey-bears{
-  background-image: url(./Images/Honey_Bear.jpg);
+.hats {
+  background-image: url(./Images/hats.jpg);
   background-size: cover;
+  background-position: center;
   display: flex;
   justify-content: center;
   align-content: center;
-  padding: 3rem;
+  padding: 3rem;;
 }
