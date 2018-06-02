@@ -8,7 +8,7 @@ body {
 }
 
 .products-divider {
-  font-weight:bold;
+  font-weight: bold;
   background-color: var(--dk-tan);
   display: flex;
   align-content: center;
@@ -19,18 +19,15 @@ body {
 
 .honey-container {
   background-color: var(--lt-brown);
-  width: 100%;
-  align-content: center;
-  justify-content: center;
+  grid-area: honey-container;
 }
-
 
 .honey-divider {
   background-color: var(--lt-tan);
-  width: 100%;
   display: flex;
   align-content: center;
   justify-content: center;
+  grid-area: honey-divider;
 }
 
 .honey-jars {
@@ -41,6 +38,7 @@ body {
   justify-content: center;
   align-content: center;
   padding: 3rem;
+  grid-area: honey-jars;
 }
 
 .honey-bears {
@@ -51,6 +49,7 @@ body {
   justify-content: center;
   align-content: center;
   padding: 3rem;
+  grid-area: honey-bears;
 }
 
 .honey-comb {
@@ -61,12 +60,12 @@ body {
   justify-content: center;
   align-content: center;
   padding: 3rem;
+  grid-area: honey-comb;
 }
 
 .balms-container {
   background-color: var(--lt-brown);
-  align-content: center;
-  justify-content: center;
+  grid-area: balms-container;
 }
 
 .balms-divider {
@@ -75,6 +74,7 @@ body {
   display: flex;
   align-content: center;
   justify-content: center;
+  grid-area: balms-divider;
 }
 
 .beard-balm {
@@ -85,6 +85,7 @@ body {
   justify-content: center;
   align-content: center;
   padding: 3rem;
+  grid-area: beard-balm;
 }
 
 .lip-balm {
@@ -95,12 +96,12 @@ body {
   justify-content: center;
   align-content: center;
   padding: 3rem;
+  grid-area: lip-balm;
 }
 
 .apparel-container {
   background-color: var(--lt-brown);
-  align-content: center;
-  justify-content: center;
+  grid-area: apparel-container;
 }
 
 .apparel-divider {
@@ -108,6 +109,7 @@ body {
   display: flex;
   align-content: center;
   justify-content: center;
+  grid-area: apparel-divider;
 }
 
 .shirts {
@@ -118,6 +120,7 @@ body {
   justify-content: center;
   align-content: center;
   padding: 3rem;
+  grid-area: shirts;
 }
 
 .hats {
@@ -128,4 +131,44 @@ body {
   justify-content: center;
   align-content: center;
   padding: 3rem;
+  grid-area: hats;
+}
+
+/* Start of Tablet Media Querys */
+
+@media screen and (min-width:600px) {
+  .shop-showcase {
+    display: grid;
+    grid-gap: 20px;
+    grid-template: 'products''honey-container''balms-container''apparel-container';
+  }
+  .honey-container {
+    display: grid;
+    grid-template: 'honey-divider honey-divider''honey-jars honey-bears''honey-comb honey-comb';
+  }
+  .balms-container {
+    display: grid;
+    grid-template: 'balms-divider balms-divider''beard-balm lip-balm';
+  }
+  .apparel-container {
+    display: grid;
+    grid-template: 'apparel-divider apparel-divider''shirts hats';
+  }
+}
+
+/* Start of Desktop Media Querys */
+
+@media screen and (min-width:975px) {
+  .honey-container {
+    grid-gap: 20px;
+    padding: 20px;
+  }
+  .balms-container {
+    grid-gap: 20px;
+    padding: 20px;
+  }
+  .apparel-container {
+    grid-gap: 20px;
+    padding: 20px;
+  }
 }
