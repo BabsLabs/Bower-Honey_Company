@@ -1,0 +1,24 @@
+@import "./stylesheet.css";
+.services-container {
+  padding-top: 8rem;
+  background-color: var(--lt-brown);
+}
+
+.services-divider {
+  background-color: var(--lt-tan);
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.swarm-removal {
+  .background-image: url(Images\beevac.JPG);
+  background-size: cover;
+  background-position: center;
+}
+
+.pollination {
+  background-image: url(Images\pollination.JPG);
+  background-size: cover;
+  background-position: center;
+}
