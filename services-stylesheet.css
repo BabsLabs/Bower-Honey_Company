@@ -1,6 +1,5 @@
 @import "./stylesheet.css";
 .services-container {
-  padding-top: 8rem;
   background-color: var(--lt-brown);
 }
 
@@ -12,13 +11,21 @@
 }
 
 .swarm-removal {
-  .background-image: url(Images\beevac.JPG);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 3rem;
+  background-image: url(./images/beevac.jpg);
   background-size: cover;
   background-position: center;
 }
 
 .pollination {
-  background-image: url(Images\pollination.JPG);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 3rem;
+  background-image: url(./Images/pollination.JPG);
   background-size: cover;
   background-position: center;
 }
