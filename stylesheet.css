@@ -344,10 +344,9 @@ footer {
 /* Start of Tablet Media Querys */
 
 @media screen and (min-width:600px) {
-
-nav{
-  text-align: center;
-}
+  nav {
+    text-align: center;
+  }
   nav ul {
     margin: 0;
     padding: .75rem;
