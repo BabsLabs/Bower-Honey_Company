@@ -48,5 +48,14 @@
 @media screen and (min-width:975px) {
   .services-container {
     grid-gap: 20px;
+    padding: 20px;
+  }
+  .swarm-removal {
+    grid-gap: 20px;
+    padding: 20px;
+  }
+  .pollination {
+    grid-gap: 20px;
+    padding: 20px;
   }
 }
