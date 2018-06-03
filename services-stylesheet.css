@@ -52,10 +52,12 @@
   }
   .swarm-removal {
     grid-gap: 20px;
-    padding: 20px;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
   }
   .pollination {
     grid-gap: 20px;
-    padding: 20px;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
   }
 }
