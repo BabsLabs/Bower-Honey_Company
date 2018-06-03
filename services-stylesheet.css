@@ -8,24 +8,45 @@
   display: flex;
   align-content: center;
   justify-content: center;
+  grid-area: services-divider;
 }
 
 .swarm-removal {
   display: flex;
   justify-content: center;
   align-content: center;
-  padding: 3rem;
+  padding: 3.5rem;
   background-image: url(./images/beevac.jpg);
   background-size: cover;
   background-position: center;
+  grid-area: swarm-removal;
 }
 
 .pollination {
   display: flex;
   justify-content: center;
   align-content: center;
-  padding: 3rem;
+  padding: 3.5rem;
   background-image: url(./Images/pollination.JPG);
   background-size: cover;
   background-position: center;
+  grid-area: pollination;
+}
+
+/* Start of Tablet Media Querys */
+
+@media screen and (min-width:600px) {
+  .services-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'services-divider services-divider''swarm-removal pollination';
+  }
+}
+
+/* Start of Desktop Media Querys */
+
+@media screen and (min-width:975px) {
+  .services-container {
+    grid-gap: 20px;
+  }
 }
