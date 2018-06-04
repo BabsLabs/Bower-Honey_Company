@@ -9,7 +9,7 @@ body {
 
 .products-divider {
   font-weight: bold;
-  background-color: var(--dk-tan);
+  background-color: var(--lt-tan);
   display: flex;
   align-content: center;
   justify-content: center;
@@ -23,7 +23,7 @@ body {
 }
 
 .honey-divider {
-  background-color: var(--lt-tan);
+  background-color: var(--dk-tan);
   display: flex;
   align-content: center;
   justify-content: center;
@@ -69,7 +69,7 @@ body {
 }
 
 .balms-divider {
-  background-color: var(--lt-tan);
+  background-color: var(--dk-tan);
   width: 100%;
   display: flex;
   align-content: center;
@@ -105,7 +105,7 @@ body {
 }
 
 .apparel-divider {
-  background-color: var(--lt-tan);
+  background-color: var(--dk-tan);
   display: flex;
   align-content: center;
   justify-content: center;
@@ -139,7 +139,6 @@ body {
 @media screen and (min-width:600px) {
   .shop-showcase {
     display: grid;
-    grid-gap: 20px;
     grid-template: 'products''honey-container''balms-container''apparel-container';
   }
   .honey-container {
