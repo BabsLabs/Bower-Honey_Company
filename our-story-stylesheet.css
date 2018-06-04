@@ -2,7 +2,7 @@
 .our-story-container {
   background: var(--lt-brown);
   display: grid;
-  grid-template-areas: 'our-story-divider''beekeeper2-imgbox''our-story''troop-imgbox';
+  grid-template-areas: 'our-story-divider''beekeeper2-imgbox''our-story''troop-imgbox' 'as-seen-on-tv''beekeeper4-imgbox';
 }
 
 .our-story-divider {
@@ -43,7 +43,40 @@
   display: none;
 }
 
+.as-seen-on-tv {
+  background-color: var(--dk-tan);
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  align-self: center;
+  padding: 20px;
+  text-align: center;
+  grid-area: as-seen-on-tv;
+}
+
+.video-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+.video-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
 .beekeeper4-imgbox {
+  background-image: url(./Images/beekeeper4.jpg);
+  background-size: cover;
+  background-position: center;
+  grid-area: beekeeper4-imgbox;
+}
+
+.beekeeper5-imgbox {
   display: none;
 }
 
@@ -52,7 +85,7 @@
 @media screen and (min-width:600px) {
   .our-story-container {
     display: grid;
-    grid-template-areas: 'our-story-divider our-story-divider''beekeeper2-imgbox beekeeper3-imgbox''our-story our-story''troop-imgbox troop-imgbox';
+    grid-template-areas: 'our-story-divider our-story-divider''beekeeper2-imgbox beekeeper3-imgbox''our-story our-story''troop-imgbox troop-imgbox''as-seen-on-tv as-seen-on-tv''beekeeper4-imgbox beekeeper5-imgbox';
   }
   .beekeeper3-imgbox {
     display: grid;
@@ -60,6 +93,13 @@
     background-position: center;
     background-size: cover;
     grid-area: beekeeper3-imgbox;
+  }
+  .beekeeper5-imgbox {
+    display: grid;
+    background-image: url(./Images/beekeeper5.jpg);
+    background-size: cover;
+    background-position: center;
+    grid-area: beekeeper5-imgbox;
   }
   .beekeeper2-imgbox {
     padding: 7rem;
@@ -70,12 +110,20 @@
   .troop-imgbox {
     padding: 7rem;
   }
+  .beekeeper4-imgbox {
+    padding: 7rem;
+  }
+  .beekeeper5-imgbox {
+    padding: 7rem;
+  }
 }
 
 /* Start of Desktop Media Querys */
 
 @media screen and (min-width:975px) {
   .our-story-container {
+    display: grid;
+    grid-template-areas: 'our-story-divider our-story-divider''beekeeper2-imgbox beekeeper3-imgbox''our-story our-story''troop-imgbox troop-imgbox''as-seen-on-tv as-seen-on-tv' 'beekeeper4-imgbox beekeeper5-imgbox';
     grid-gap: 20px;
     padding: 20px;
   }
@@ -93,5 +141,16 @@
     grid-gap: 20px;
     padding-top: 8rem;
     padding-bottom: 8rem;
+  }
+  .beekeeper4-imgbox {
+    grid-gap: 20px;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+  .beekeeper5-imgbox {
+    grid-gap: 20px;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    background-position: center top;
   }
 }
