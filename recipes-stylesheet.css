@@ -1,0 +1,114 @@
+@import "./stylesheet.css";
+.recipes-container li {
+  padding: 3px;
+}
+
+.recipes-container {
+  background: var(--lt-brown);
+}
+
+.imgbox{
+  padding:7rem;
+}
+
+.recipes-divider {
+  background: var(--lt-tan);
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.cornbread-container {
+  display: grid;
+  grid-template-areas: 'cornbread-img''cornbread';
+  grid-area: 'cornbread-container';
+}
+
+.cornbread-img {
+  background: url(./Images/cornbread.jpg);
+  background-position: center;
+  background-size: cover;
+  grid-area: cornbread-img;
+}
+
+.cornbread {
+  background: var(--lt-tan);
+  grid-area: cornbread;
+  padding: 20px;
+}
+
+.smoothie-container {
+  display: grid;
+  grid-template-areas: 'smoothie-img''smoothie';
+  grid-area: 'smoothie-container';
+}
+
+.smoothie-img {
+  background: url(./Images/smoothie.jpg);
+  background-position: left top;
+  background-size: cover;
+  grid-area: smoothie-img;
+}
+
+.smoothie {
+  background: var(--lt-tan);
+  grid-area: smoothie;
+  padding: 20px;
+}
+
+.carrots-container {
+  display: grid;
+  grid-template-areas: 'carrots-img''carrots';
+  grid-area: 'carrots-container';
+}
+
+.carrots-img {
+  background: url(./Images/carrots.jpg);
+  background-position: center;
+  background-size: cover;
+  grid-area: carrots-img;
+}
+
+.carrots {
+  background: var(--lt-tan);
+  grid-area: carrots;
+  padding: 20px;
+}
+
+.boozy-container {
+  display: grid;
+  grid-template-areas: 'boozy-img''boozy';
+  grid-area: 'boozy-container';
+}
+
+.boozy-img {
+  background: url(./Images/boozy-drink.jpg);
+  background-position: center;
+  background-size: cover;
+  grid-area: boozy-img;
+}
+
+.boozy {
+  background: var(--lt-tan);
+  grid-area: boozy;
+  padding: 20px;
+}
+
+.parfait-container {
+  display: grid;
+  grid-template-areas: 'parfait-img''parfait';
+  grid-area: 'parfait-container';
+}
+
+.parfait-img {
+  background: url(./Images/parfait.jpg);
+  background-position: center;
+  background-size: cover;
+  grid-area: parfait-img;
+}
+
+.parfait {
+  background: var(--lt-tan);
+  grid-area: parfait;
+  padding: 20px;
+}
