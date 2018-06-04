@@ -1,0 +1,59 @@
+@import "./stylesheet.css";
+.contact-container {
+  background: var(--lt-brown);
+  display: grid;
+  grid-template-areas: 'contact-us-divider''contact-form';
+}
+
+.contact-us-divider {
+  background: var(--lt-tan);
+  text-align: center;
+  grid-area: contact-us-divider;
+}
+
+/* Form Styles */
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 20px;
+  border: 1px solid var(--lt-brown);
+  border-radius: 2px;
+  box-sizing: border-box;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: var(--lt-tan);
+  color: var(--lt-brown);
+  padding: 12px 20px;
+  border: 1px solid var(--lt-brown);
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: var(--lt-brown);
+  color: var(--lt-tan);
+  border: 1px solid var(--lt-tan);
+}
+
+.contact-form {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  border-radius: 2px;
+  background-color: var(--dk-tan);
+  padding: 20px;
+  grid-area: contact-form;
+}
+
+/* Start of Desktop Media Querys */
+
+@media screen and (min-width:975px) {
+  .contact-container {
+    grid-gap: 20px;
+    padding: 20px;
+  }
+}
