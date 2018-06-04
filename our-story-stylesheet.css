@@ -1,0 +1,97 @@
+@import "./stylesheet.css";
+.our-story-container {
+  background: var(--lt-brown);
+  display: grid;
+  grid-template-areas: 'our-story-divider''beekeeper2-imgbox''our-story''troop-imgbox';
+}
+
+.our-story-divider {
+  background: var(--lt-tan);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  grid-area: our-story-divider;
+}
+
+.beekeeper2-imgbox {
+  background-image: url(./Images/beekeeper2.jpg);
+  background-position: center;
+  background-size: cover;
+  grid-area: beekeeper2-imgbox;
+}
+
+.troop-imgbox {
+  background-image: url(./Images/beekeeping-troop.jpg);
+  background-position: center;
+  background-size: cover;
+  grid-area: troop-imgbox;
+}
+
+.our-story {
+  background-color: var(--dk-tan);
+  padding: 20px;
+  align-content: center;
+  justify-content: center;
+  grid-area: our-story;
+}
+
+.our-story h3 {
+  text-align: center;
+}
+
+.beekeeper3-imgbox {
+  display: none;
+}
+
+.beekeeper4-imgbox {
+  display: none;
+}
+
+/* Start of Tablet Media Querys */
+
+@media screen and (min-width:600px) {
+  .our-story-container {
+    display: grid;
+    grid-template-areas: 'our-story-divider our-story-divider''beekeeper2-imgbox beekeeper3-imgbox''our-story our-story''troop-imgbox troop-imgbox';
+  }
+  .beekeeper3-imgbox {
+    display: grid;
+    background-image: url(./Images/beekeeper3.jpg);
+    background-position: center;
+    background-size: cover;
+    grid-area: beekeeper3-imgbox;
+  }
+  .beekeeper2-imgbox {
+    padding: 7rem;
+  }
+  .beekeeper3-imgbox {
+    padding: 7rem;
+  }
+  .troop-imgbox {
+    padding: 7rem;
+  }
+}
+
+/* Start of Desktop Media Querys */
+
+@media screen and (min-width:975px) {
+  .our-story-container {
+    grid-gap: 20px;
+    padding: 20px;
+  }
+  .beekeeper2-imgbox {
+    grid-gap: 20px;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+  .beekeeper3-imgbox {
+    grid-gap: 20px;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+  .troop-imgbox {
+    grid-gap: 20px;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+}
