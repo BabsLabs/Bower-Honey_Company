@@ -4,7 +4,7 @@ body {
 }
 
 .shop-showcase {
-  padding-top: 8rem;
+  background-color: var(--lt-brown);
 }
 
 .products-divider {
@@ -158,16 +158,20 @@ body {
 /* Start of Desktop Media Querys */
 
 @media screen and (min-width:975px) {
+  .shop-showcase {
+    padding: 20px;
+    grid-gap: 20px;
+  }
+  .products-divider {
+    grid-gap: 20px;
+  }
   .honey-container {
     grid-gap: 20px;
-    padding: 20px;
   }
   .balms-container {
     grid-gap: 20px;
-    padding: 20px;
   }
   .apparel-container {
     grid-gap: 20px;
-    padding: 20px;
   }
 }
