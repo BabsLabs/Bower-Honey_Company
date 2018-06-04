@@ -59,7 +59,6 @@
   padding-bottom: 56.25%;
   position: relative;
   height: 0;
-  border: 20px solid var(--lt-brown);
 }
 
 .video-responsive iframe {
@@ -153,5 +152,8 @@
     padding-top: 8rem;
     padding-bottom: 8rem;
     background-position: center top;
+  }
+  .video-responsive {
+    border: 20px solid var(--lt-brown);
   }
 }
