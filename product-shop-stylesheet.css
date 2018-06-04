@@ -21,6 +21,11 @@
   text-align: center;
 }
 
+.products-divider a {
+  color: var(--lt-brown);
+  text-decoration: none;
+}
+
 /*imagebox goes here
 .TYPE-imgbox {
   background-image: url();
