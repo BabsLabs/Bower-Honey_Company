@@ -1,17 +1,18 @@
 @import "./stylesheet.css";
-
-.contact {
+.contact-container {
+  background: var(--lt-brown);
   display: grid;
-  grid-template-areas: 'contact-us-divider''contact-container';
+  grid-template-areas: 'contact-us-divider''contact-form';
 }
 
-.contact-us-divider{
+.contact-us-divider {
   background: var(--lt-tan);
   text-align: center;
   grid-area: contact-us-divider;
 }
 
 /* Form Styles */
+
 input[type=text], select, textarea {
   width: 100%;
   padding: 20px;
@@ -38,12 +39,21 @@ input[type=submit]:hover {
   border: 1px solid var(--lt-tan);
 }
 
-.contact-container {
+.contact-form {
   display: flex;
   align-content: center;
   justify-content: center;
-  border-radius: 5px;
+  border-radius: 2px;
   background-color: var(--dk-tan);
   padding: 20px;
-  grid-area: contact-container;
+  grid-area: contact-form;
+}
+
+/* Start of Desktop Media Querys */
+
+@media screen and (min-width:975px) {
+  .contact-container {
+    grid-gap: 20px;
+    padding: 20px;
+  }
 }
