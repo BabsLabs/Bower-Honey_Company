@@ -7,8 +7,8 @@
   background: var(--lt-brown);
 }
 
-.imgbox{
-  padding:7rem;
+.imgbox {
+  padding: 7rem;
 }
 
 .recipes-divider {
@@ -32,7 +32,7 @@
 }
 
 .cornbread {
-  background: var(--lt-tan);
+  background: var(--dk-tan);
   grid-area: cornbread;
   padding: 20px;
 }
@@ -70,7 +70,7 @@
 }
 
 .carrots {
-  background: var(--lt-tan);
+  background: var(--dk-tan);
   grid-area: carrots;
   padding: 20px;
 }
@@ -108,7 +108,55 @@
 }
 
 .parfait {
-  background: var(--lt-tan);
+  background: var(--dk-tan);
   grid-area: parfait;
   padding: 20px;
+}
+
+/* Start of Tablet Media Querys */
+
+@media screen and (min-width:600px) {
+  .recipes-container {
+    display: grid;
+  }
+  .recipes-container h2 {
+    text-align: center;
+  }
+  .cornbread-container {
+    grid-template-areas: 'cornbread-img cornbread';
+  }
+  .smoothie-container {
+    grid-template-areas: 'smoothie smoothie-img';
+  }
+  .carrots-container {
+    grid-template-areas: 'carrots-img carrots';
+  }
+  .boozy-container {
+    grid-template-areas: 'boozy boozy-img';
+  }
+  .parfait-container {
+    grid-template-areas: 'parfait-img parfait';
+  }
+}
+
+@media screen and (min-width:975px) {
+  .recipes-container {
+    padding: 20px;
+    grid-gap: 20px;
+  }
+  .cornbread-container {
+    grid-gap: 20px;
+  }
+  .smoothie-container {
+    grid-gap: 20px;
+  }
+  .carrots-container {
+    grid-gap: 20px;
+  }
+  .boozy-container {
+    grid-gap: 20px;
+  }
+  .parfait-container {
+    grid-gap: 20px;
+  }
 }
