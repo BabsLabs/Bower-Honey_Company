@@ -1,0 +1,23 @@
+@import "./stylesheet.css";
+@import "product-shop-stylesheet.css";
+
+.product-shop-container {
+  background: var(--lt-brown);
+  display: grid;
+  grid-template-areas: 'products-divider''lip-balm-imgbox' 'product-info';
+}
+.lip-balm-imgbox {
+  background-image: url(./Images/lip-balm.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+/* Start of Tablet Media Querys */
+
+@media screen and (min-width:600px) {
+  .product-shop-container {
+    background: var(--lt-brown);
+    display: grid;
+    grid-template-areas: 'products-divider products-divider''lip-balm-imgbox product-info';
+  }
+}
