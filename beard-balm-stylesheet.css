@@ -1,0 +1,23 @@
+@import "./stylesheet.css";
+@import "product-shop-stylesheet.css";
+
+.product-shop-container {
+  background: var(--lt-brown);
+  display: grid;
+  grid-template-areas: 'products-divider''beard-balm-imgbox' 'product-info';
+}
+.beard-balm-imgbox {
+  background-image: url(./Images/balm4-2.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+/* Start of Tablet Media Querys */
+
+@media screen and (min-width:600px) {
+  .product-shop-container {
+    background: var(--lt-brown);
+    display: grid;
+    grid-template-areas: 'products-divider products-divider''beard-balm-imgbox product-info';
+  }
+}
