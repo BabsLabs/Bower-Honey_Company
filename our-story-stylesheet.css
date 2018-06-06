@@ -25,6 +25,8 @@
   background-position: center;
   background-size: cover;
   grid-area: troop-imgbox;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
 }
 
 .our-story {
@@ -108,7 +110,7 @@
     padding: 7rem;
   }
   .troop-imgbox {
-    padding: 7rem;
+    padding: 10rem 10rem;
   }
   .beekeeper4-imgbox {
     padding: 7rem;
@@ -139,8 +141,8 @@
   }
   .troop-imgbox {
     grid-gap: 20px;
-    padding-top: 8rem;
-    padding-bottom: 8rem;
+    padding-top: 15rem;
+    padding-bottom: 15rem;
   }
   .beekeeper4-imgbox {
     grid-gap: 20px;
