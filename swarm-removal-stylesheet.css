@@ -1,0 +1,29 @@
+@import "./stylesheet.css";
+@import "product-shop-stylesheet.css";
+
+.product-shop-container {
+  background: var(--lt-brown);
+  display: grid;
+  grid-template-areas: 'products-divider''swarm-removal-imgbox' 'product-info';
+}
+.swarm-removal-imgbox {
+  background-image: url(./Images/beevac.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.product-info p {
+  text-align: left;
+  padding: 0px 20px 0px 20px;
+}
+
+/* Start of Tablet Media Querys */
+
+@media screen and (min-width:600px) {
+  .product-shop-container {
+    background: var(--lt-brown);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'products-divider products-divider''swarm-removal-imgbox product-info';
+  }
+}

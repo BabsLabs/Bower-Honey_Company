@@ -139,6 +139,7 @@ body {
   text-decoration: none;
   border: 1px solid var(--lt-tan);
   text-align: center;
+  margin: 20px;
 }
 
 .btn:hover {
@@ -152,6 +153,8 @@ body {
   padding: .6rem 1.3rem;
   text-decoration: none;
   border: 1px solid var(--lt-brown);
+  text-align: center;
+  margin: 20px;
 }
 
 .btn-b:hover {
