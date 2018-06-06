@@ -200,6 +200,7 @@ img {
   padding-bottom: 1rem;
   margin-bottom: 0;
   color: var(--lt-tan);
+  text-shadow: 2px 2px #000000;
 }
 
 .showcase p {
@@ -215,17 +216,24 @@ img {
   align-items: center;
   justify-content: center;
   padding: 1.5rem;
+  text-align: center;
+}
+
+.top-box h4 {
+  text-shadow: 2px 2px #000000;
 }
 
 .top-box .price {
   font-size: 2rem;
   font-style: italic;
+  text-shadow: 2px 2px #000000;
 }
 
 .top-box-a {
-  background-image: url(./Images/balm4-2.jpg);
+  background-image: url(./Images/lip-balm.jpg);
   background-size: cover;
   background-position: center;
+  color: var(--lt-tan);
   grid-area: top-box-a;
 }
 

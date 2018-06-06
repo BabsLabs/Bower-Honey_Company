@@ -21,6 +21,10 @@
   text-align: center;
 }
 
+.product-info h3 {
+  text-align: center;
+}
+
 .products-divider a {
   color: var(--lt-brown);
   text-decoration: none;
