@@ -7,7 +7,7 @@
   grid-template-areas: 'products-divider''shirts-imgbox' 'product-info';
 }
 .shirts-imgbox {
-  background-image: url(./Images/tshirts.jpg);
+  background-image: url(../Images/tshirts.jpg);
   background-position: center;
   background-size: cover;
 }

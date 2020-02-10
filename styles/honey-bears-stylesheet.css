@@ -7,7 +7,7 @@
   grid-template-areas: 'products-divider''honey-bears-imgbox' 'product-info';
 }
 .honey-bears-imgbox {
-  background-image: url(./Images/honey_bear.jpg);
+  background-image: url(../Images/honey_bear.jpg);
   background-position: center;
   background-size: cover;
 }

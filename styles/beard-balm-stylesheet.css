@@ -7,7 +7,7 @@
   grid-template-areas: 'products-divider''beard-balm-imgbox' 'product-info';
 }
 .beard-balm-imgbox {
-  background-image: url(./Images/balm4-2.jpg);
+  background-image: url(../Images/balm4-2.jpg);
   background-position: center;
   background-size: cover;
 }

@@ -7,7 +7,7 @@
   grid-template-areas: 'products-divider''hats-imgbox' 'product-info';
 }
 .hats-imgbox {
-  background-image: url(./Images/hats.jpg);
+  background-image: url(../Images/hats.jpg);
   background-position: center;
   background-size: cover;
 }
