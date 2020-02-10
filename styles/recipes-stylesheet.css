@@ -25,7 +25,7 @@
 }
 
 .cornbread-img {
-  background: url(../Images/cornbread.jpg);
+  background: url(../images/cornbread.jpg);
   background-position: center;
   background-size: cover;
   grid-area: cornbread-img;
@@ -44,7 +44,7 @@
 }
 
 .smoothie-img {
-  background: url(../Images/smoothie.jpg);
+  background: url(../images/smoothie.jpg);
   background-position: left top;
   background-size: cover;
   grid-area: smoothie-img;
@@ -63,7 +63,7 @@
 }
 
 .carrots-img {
-  background: url(../Images/carrots.jpg);
+  background: url(../images/carrots.jpg);
   background-position: center;
   background-size: cover;
   grid-area: carrots-img;
@@ -82,7 +82,7 @@
 }
 
 .boozy-img {
-  background: url(../Images/boozy-drink.jpg);
+  background: url(../images/boozy-drink.jpg);
   background-position: center;
   background-size: cover;
   grid-area: boozy-img;
@@ -101,7 +101,7 @@
 }
 
 .parfait-img {
-  background: url(../Images/parfait.jpg);
+  background: url(../images/parfait.jpg);
   background-position: center;
   background-size: cover;
   grid-area: parfait-img;

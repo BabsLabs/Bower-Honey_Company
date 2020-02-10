@@ -7,7 +7,7 @@
   grid-template-areas: 'products-divider''lip-balm-imgbox' 'product-info';
 }
 .lip-balm-imgbox {
-  background-image: url(../Images/lip-balm.jpg);
+  background-image: url(../images/lip-balm.jpg);
   background-position: center;
   background-size: cover;
 }

@@ -7,7 +7,7 @@
   grid-template-areas: 'products-divider''honey-jars-imgbox' 'product-info';
 }
 .honey-jar-imgbox {
-  background-image: url(../Images/honey-color.jpg);
+  background-image: url(../images/honey-color.jpg);
   background-position: center;
   background-size: cover;
 }

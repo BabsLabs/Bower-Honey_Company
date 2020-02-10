@@ -127,7 +127,7 @@ nav a:hover {
 /* Body Styles Start Here */
 
 body {
-  background-image: url(../Images/seamless-pattern-honeycomb.png);
+  background-image: url(../images/seamless-pattern-honeycomb.png);
   background-repeat: repeat;
   background-attachment: fixed;
   /* Add Optional Margin Here????? */
@@ -186,7 +186,7 @@ img {
 .showcase {
   grid-area: showcase;
   min-height: 400px;
-  background: url(../Images/honey-color.jpg);
+  background: url(../images/honey-color.jpg);
   background-size: cover;
   background-position: center;
   padding: 3rem;
@@ -231,7 +231,7 @@ img {
 }
 
 .top-box-a {
-  background-image: url(../Images/lip-balm.jpg);
+  background-image: url(../images/lip-balm.jpg);
   background-size: cover;
   background-position: center;
   color: var(--lt-tan);
@@ -239,7 +239,7 @@ img {
 }
 
 .top-box-b {
-  background-image: url(../Images/Beevac.jpg);
+  background-image: url(../images/Beevac.jpg);
   background-size: cover;
   background-position: bottom;
   color: var(--lt-tan);
@@ -311,21 +311,21 @@ img {
 
 .inside-the-hive {
   grid-area: inside-the-hive;
-  background-image: url(../Images/inside-the-bee-hive.jpg);
+  background-image: url(../images/inside-the-bee-hive.jpg);
   background-position: left;
   background-size: cover;
 }
 
 .beekeeper {
   grid-area: beekeeper;
-  background-image: url(../Images/beekeeper.jpg);
+  background-image: url(../images/beekeeper.jpg);
   background-position: center;
   background-size: cover;
 }
 
 .pancakes {
   grid-area: pancakes;
-  background-image: url(../Images/Honey_being_drizzled_onto_buttered_pancakes.jpg);
+  background-image: url(../images/Honey_being_drizzled_onto_buttered_pancakes.jpg);
   background-position: left;
   background-size: cover;
 }

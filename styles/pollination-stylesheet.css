@@ -7,7 +7,7 @@
   grid-template-areas: 'products-divider''pollination-imgbox' 'product-info';
 }
 .pollination-imgbox {
-  background-image: url(../Images/pollination.jpg);
+  background-image: url(../images/pollination.jpg);
   background-position: center;
   background-size: cover;
 }
