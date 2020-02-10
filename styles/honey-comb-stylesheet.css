@@ -4,17 +4,12 @@
 .product-shop-container {
   background: var(--lt-brown);
   display: grid;
-  grid-template-areas: 'products-divider''swarm-removal-imgbox' 'product-info';
+  grid-template-areas: 'products-divider''honey-comb-imgbox' 'product-info';
 }
-.swarm-removal-imgbox {
-  background-image: url(./Images/beevac.jpg);
+.honey-comb-imgbox {
+  background-image: url(../images/honeycomb2.jpg);
   background-position: center;
   background-size: cover;
-}
-
-.product-info p {
-  text-align: left;
-  padding: 0px 20px 0px 20px;
 }
 
 /* Start of Tablet Media Querys */
@@ -23,7 +18,6 @@
   .product-shop-container {
     background: var(--lt-brown);
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: 'products-divider products-divider''swarm-removal-imgbox product-info';
+    grid-template-areas: 'products-divider products-divider''honey-comb-imgbox product-info';
   }
 }

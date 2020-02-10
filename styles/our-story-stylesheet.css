@@ -14,14 +14,14 @@
 }
 
 .beekeeper2-imgbox {
-  background-image: url(./Images/beekeeper2.jpg);
+  background-image: url(../images/beekeeper2.jpg);
   background-position: center;
   background-size: cover;
   grid-area: beekeeper2-imgbox;
 }
 
 .troop-imgbox {
-  background-image: url(./Images/beekeeping-troop.jpg);
+  background-image: url(../images/beekeeping-troop.jpg);
   background-position: center;
   background-size: cover;
   grid-area: troop-imgbox;
@@ -72,7 +72,7 @@
 }
 
 .beekeeper4-imgbox {
-  background-image: url(./Images/beekeeper4.jpg);
+  background-image: url(../images/beekeeper4.jpg);
   background-size: cover;
   background-position: center;
   grid-area: beekeeper4-imgbox;
@@ -91,14 +91,14 @@
   }
   .beekeeper3-imgbox {
     display: grid;
-    background-image: url(./Images/beekeeper3.jpg);
+    background-image: url(../images/beekeeper3.jpg);
     background-position: center;
     background-size: cover;
     grid-area: beekeeper3-imgbox;
   }
   .beekeeper5-imgbox {
     display: grid;
-    background-image: url(./Images/beekeeper5.jpg);
+    background-image: url(../images/beekeeper5.jpg);
     background-size: cover;
     background-position: center;
     grid-area: beekeeper5-imgbox;

@@ -4,10 +4,10 @@
 .product-shop-container {
   background: var(--lt-brown);
   display: grid;
-  grid-template-areas: 'products-divider''honey-jars-imgbox' 'product-info';
+  grid-template-areas: 'products-divider''hats-imgbox' 'product-info';
 }
-.honey-jar-imgbox {
-  background-image: url(./Images/honey-color.jpg);
+.hats-imgbox {
+  background-image: url(../images/hats.jpg);
   background-position: center;
   background-size: cover;
 }
@@ -18,6 +18,6 @@
   .product-shop-container {
     background: var(--lt-brown);
     display: grid;
-    grid-template-areas: 'products-divider products-divider''honey-jars-imgbox product-info';
+    grid-template-areas: 'products-divider products-divider''hats-imgbox product-info';
   }
 }

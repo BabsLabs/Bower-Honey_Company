@@ -31,7 +31,7 @@ body {
 }
 
 .honey-jars {
-  background-image: url(./Images/honey-318175_1920.jpg);
+  background-image: url(../images/honey-318175_1920.jpg);
   background-size: cover;
   background-position: center;
   display: flex;
@@ -42,7 +42,7 @@ body {
 }
 
 .honey-bears {
-  background-image: url(./Images/Honey_Bear.jpg);
+  background-image: url(../images/Honey_Bear.jpg);
   background-size: cover;
   background-position: center;
   display: flex;
@@ -53,7 +53,7 @@ body {
 }
 
 .honey-comb {
-  background-image: url(./Images/honeycomb.jpg);
+  background-image: url(../images/honeycomb.jpg);
   background-size: cover;
   background-position: center;
   display: flex;
@@ -78,7 +78,7 @@ body {
 }
 
 .beard-balm {
-  background-image: url(./Images/balm4-2.jpg);
+  background-image: url(../images/balm4-2.jpg);
   background-size: cover;
   background-position: center;
   display: flex;
@@ -89,7 +89,7 @@ body {
 }
 
 .lip-balm {
-  background-image: url(./Images/lip-balm.jpg);
+  background-image: url(../images/lip-balm.jpg);
   background-size: cover;
   background-position: center;
   display: flex;
@@ -113,7 +113,7 @@ body {
 }
 
 .shirts {
-  background-image: url(./images/tshirts.jpg);
+  background-image: url(../images/tshirts.jpg);
   background-size: cover;
   background-position: center;
   display: flex;
@@ -124,7 +124,7 @@ body {
 }
 
 .hats {
-  background-image: url(./Images/hats.jpg);
+  background-image: url(../images/hats.jpg);
   background-size: cover;
   background-position: center;
   display: flex;

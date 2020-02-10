@@ -4,10 +4,10 @@
 .product-shop-container {
   background: var(--lt-brown);
   display: grid;
-  grid-template-areas: 'products-divider''hats-imgbox' 'product-info';
+  grid-template-areas: 'products-divider''lip-balm-imgbox' 'product-info';
 }
-.hats-imgbox {
-  background-image: url(./Images/hats.jpg);
+.lip-balm-imgbox {
+  background-image: url(../images/lip-balm.jpg);
   background-position: center;
   background-size: cover;
 }
@@ -18,6 +18,6 @@
   .product-shop-container {
     background: var(--lt-brown);
     display: grid;
-    grid-template-areas: 'products-divider products-divider''hats-imgbox product-info';
+    grid-template-areas: 'products-divider products-divider''lip-balm-imgbox product-info';
   }
 }

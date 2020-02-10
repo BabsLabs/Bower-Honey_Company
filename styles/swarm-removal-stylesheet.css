@@ -4,12 +4,17 @@
 .product-shop-container {
   background: var(--lt-brown);
   display: grid;
-  grid-template-areas: 'products-divider''beard-balm-imgbox' 'product-info';
+  grid-template-areas: 'products-divider''swarm-removal-imgbox' 'product-info';
 }
-.beard-balm-imgbox {
-  background-image: url(./Images/balm4-2.jpg);
+.swarm-removal-imgbox {
+  background-image: url(../images/beevac.jpg);
   background-position: center;
   background-size: cover;
+}
+
+.product-info p {
+  text-align: left;
+  padding: 0px 20px 0px 20px;
 }
 
 /* Start of Tablet Media Querys */
@@ -18,6 +23,7 @@
   .product-shop-container {
     background: var(--lt-brown);
     display: grid;
-    grid-template-areas: 'products-divider products-divider''beard-balm-imgbox product-info';
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'products-divider products-divider''swarm-removal-imgbox product-info';
   }
 }
